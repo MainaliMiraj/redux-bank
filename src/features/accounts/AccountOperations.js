@@ -43,7 +43,7 @@ function AccountOperations() {
 
   return (
     <div>
-      <h2>Your account operations</h2>
+      <h2 style={{display:'flex',justifyContent:"center", color:"orangered"}}>Your account operations:</h2>
       <div className="inputs">
         <div>
           <label>Deposit</label>

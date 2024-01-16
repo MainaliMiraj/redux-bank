@@ -15,7 +15,7 @@ function Customer() {
 
   return (
     <div>
-      <h2>Create new customer</h2>
+      <h2 style={{display:'flex',justifyContent:'center'}}>Create new customer</h2>
       <div className="inputs">
         <div>
           <label>Customer full name</label>
