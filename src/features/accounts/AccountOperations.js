@@ -19,7 +19,8 @@ function AccountOperations() {
 
   function handleDeposit() {
     if (!depositAmount || depositAmount<=0) return alert('invalid deposit amount')
-    dispatch(deposit(depositAmount, currency));
+    // dispatch(deposit(depositAmount, currency));
+    dispatch(deposit(depositAmount));
     setDepositAmount("");
     setCurrency("USD");
   }
