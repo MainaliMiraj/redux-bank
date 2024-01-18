@@ -18,9 +18,9 @@ function AccountOperations() {
   } = useSelector((state) => state.account);
 
   function handleDeposit() {
-    if (!depositAmount || depositAmount<=0) return alert('invalid deposit amount')
-    // dispatch(deposit(depositAmount, currency));
-    dispatch(deposit(depositAmount));
+    if (!depositAmount || depositAmount <= 0)
+      return alert("invalid deposit amount");
+    dispatch(deposit(depositAmount, currency));
     setDepositAmount("");
     setCurrency("USD");
   }
@@ -44,7 +44,15 @@ function AccountOperations() {
 
   return (
     <div>
-      <h2 style={{display:'flex',justifyContent:"center", color:"orangered"}}>Your account operations:</h2>
+      <h2
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          color: "orangered",
+        }}
+      >
+        Your account operations:
+      </h2>
       <div className="inputs">
         <div>
           <label>Deposit</label>
