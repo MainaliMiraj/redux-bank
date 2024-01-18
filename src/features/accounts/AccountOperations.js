@@ -18,10 +18,10 @@ function AccountOperations() {
   } = useSelector((state) => state.account);
 
   function handleDeposit() {
-    if (!depositAmount) return;
+    if (!depositAmount || depositAmount<=0) return alert('invalid deposit amount')
     dispatch(deposit(depositAmount, currency));
     setDepositAmount("");
-    setCurrency("");
+    setCurrency("USD");
   }
 
   function handleWithdrawal() {
